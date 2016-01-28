@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.sports.stats.sportstat.app">
 
-
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -26,20 +26,27 @@
             android:label="@string/title_activity_login"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.app.sports.stats.sportstat.app.MainActivity" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Register"
             android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-    </application>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="oWsFXGWqRwFeKHDEz1pUhyaDRg3ZMTORbUuaMQ16" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="Xx7TU0wBafU9MiAO8P4oH4BWfMONx2hVtcAP500T" />
+    </application>
 </manifest>
