@@ -41,12 +41,5 @@
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
-        <meta-data
-            android:name="com.parse.APPLICATION_ID"
-            android:value="oWsFXGWqRwFeKHDEz1pUhyaDRg3ZMTORbUuaMQ16" />
-        <meta-data
-            android:name="com.parse.CLIENT_KEY"
-            android:value="Xx7TU0wBafU9MiAO8P4oH4BWfMONx2hVtcAP500T" />
     </application>
 </manifest>

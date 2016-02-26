@@ -11,8 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
-import com.parse.Parse;
-import com.parse.ParseObject;
+import com.backendless.Backendless;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -22,18 +21,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        // [Optional] Power your app with Local Datastore. For more info, go to
-        // https://parse.com/docs/android/guide#local-datastore
-        Parse.enableLocalDatastore(this);
-        Parse.initialize(this);
-
-        ParseObject testObject = new ParseObject("TestObject");
-        testObject.put("foo", "bar");
-        testObject.saveInBackground();
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /**
+         * Backendless Test Code
+         */
+
+        final String APP_ID = "D1E00395-C124-3ECE-FF99-1B2070F9E400";
+        final String SECRET_KEY = "D51F230C-BDF1-7C2B-FF49-7AEA8B3EC500";
+        String appVersion = "v1";
+        Backendless.initApp( this, APP_ID, SECRET_KEY, appVersion );
 
         etEmail = (EditText) findViewById(R.id.etEmail);
         etUsername = (EditText)findViewById(R.id.etUsername);

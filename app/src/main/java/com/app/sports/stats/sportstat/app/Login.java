@@ -2,10 +2,7 @@ package com.app.sports.stats.sportstat.app;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,7 +12,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     private Button bLogin;
     private EditText etUsername, etPassword;
-    private TextView tvRegisterLink;
+    private TextView tvRegisterLink, tvCreatePlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +23,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         etPassword = (EditText) findViewById(R.id.etPassword);
         bLogin = (Button) findViewById(R.id.bLogin);
         tvRegisterLink = (TextView) findViewById(R.id.tvRegisterLink);
+        tvCreatePlayer = (TextView) findViewById(R.id.tvCreatePlayer);
 
         bLogin.setOnClickListener(this);
         tvRegisterLink.setOnClickListener(this);
+        tvCreatePlayer.setOnClickListener(this);
 
     }
 
@@ -45,6 +44,14 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             case R.id.tvRegisterLink:
 
                 startActivity(new Intent(this, Register.class));
+
+                break;
+        }
+
+        switch (v.getId()) {
+            case R.id.tvCreatePlayer:
+
+                startActivity(new Intent(this, CreatePlayer.class));
 
                 break;
         }
