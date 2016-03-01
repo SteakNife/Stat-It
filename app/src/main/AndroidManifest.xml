@@ -41,5 +41,10 @@
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+            android:name=".CreatePlayer"
+            android:label="@string/title_activity_createplayer"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 </manifest>
