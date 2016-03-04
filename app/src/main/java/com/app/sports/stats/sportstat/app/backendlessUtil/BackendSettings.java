@@ -1,4 +1,4 @@
-package com.app.sports.stats.sportstat.app;
+package com.app.sports.stats.sportstat.app.backendlessUtil;
 
 /**
  * Created by Padraic Cashin on 29/02/2016.

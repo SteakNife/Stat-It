@@ -33,9 +33,16 @@
 
     <Button
         android:id="@+id/bLogout"
+        android:layout_margin="10dp"
         android:text="Logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/bRetrieveAllPlayerData"
+        android:text="Retrieve All Player Data"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

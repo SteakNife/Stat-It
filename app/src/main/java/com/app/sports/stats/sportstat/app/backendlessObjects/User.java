@@ -1,7 +1,7 @@
-package com.app.sports.stats.sportstat.app;
+package com.app.sports.stats.sportstat.app.backendlessObjects;
 
 /**
- * Created by Padraic on 26/01/2016.
+ * Created by Padraic Cashin on 26/01/2016.
  */
 public class User {
 
