@@ -5,7 +5,6 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
-
 import java.util.Iterator;
 
 /**
@@ -14,7 +13,6 @@ import java.util.Iterator;
 public class RetrievePlayerData {
 
     public void retrieveAllPlayerData() {
-
 
         Backendless.Persistence.of(Player.class).find( new AsyncCallback<BackendlessCollection<Player>>(){
             @Override
@@ -35,5 +33,4 @@ public class RetrievePlayerData {
             }
         });
     }
-
 }

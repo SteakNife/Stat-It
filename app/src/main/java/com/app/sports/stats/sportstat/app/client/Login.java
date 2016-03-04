@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.app.sports.stats.sportstat.app.service.CreatePlayer;
 import com.app.sports.stats.sportstat.app.R;
 
