@@ -1,4 +1,4 @@
-package com.app.sports.stats.sportstat.app.service;
+package com.app.sports.stats.sportstat.app.service.Player;
 
 import android.content.Context;
 import android.content.Intent;
