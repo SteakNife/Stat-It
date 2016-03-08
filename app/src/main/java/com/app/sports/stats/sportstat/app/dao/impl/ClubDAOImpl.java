@@ -1,7 +1,6 @@
 package com.app.sports.stats.sportstat.app.dao.impl;
 
 import com.app.sports.stats.sportstat.app.backendlessObjects.Club;
-import com.app.sports.stats.sportstat.app.backendlessObjects.Player;
 import com.app.sports.stats.sportstat.app.dao.ClubDAO;
 import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
