@@ -1,4 +1,4 @@
-package com.app.sports.stats.sportstat.app.service;
+package com.app.sports.stats.sportstat.app.client;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -50,7 +50,7 @@ public class CreatePlayer extends AppCompatActivity implements View.OnClickListe
 
     public void createPlayer(final String playerName) {
 
-        Player player = new Player();
+        final Player player = new Player();
         player.setPlayerName(playerName);
 
         Backendless.initApp(this, BackendSettings.APP_ID, BackendSettings.SECRET_KEY, BackendSettings.VERSION);
@@ -63,7 +63,7 @@ public class CreatePlayer extends AppCompatActivity implements View.OnClickListe
 
             public void handleResponse( Player response )
             {
-                System.out.println("new player instance has been Created");
+                System.out.println("new player instance has been created called : " + player.getPlayerName());
             }
 
             public void handleFault( BackendlessFault fault )

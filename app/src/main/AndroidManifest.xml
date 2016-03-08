@@ -42,14 +42,15 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".service.CreatePlayer"
+            android:name=".client.CreatePlayer"
             android:label="@string/title_activity_createplayer"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".client.RetrievePlayerList"
+            android:name=".client.PlayerListActivity"
             android:label="@string/title_activity_playerlist"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
     </application>
 </manifest>

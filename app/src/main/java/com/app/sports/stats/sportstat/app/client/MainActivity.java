@@ -8,10 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import com.app.sports.stats.sportstat.app.R;
 import com.app.sports.stats.sportstat.app.backendlessUtil.BackendSettings;
-import com.app.sports.stats.sportstat.app.service.RetrievePlayerData;
+import com.app.sports.stats.sportstat.app.service.RetrievePlayerDataTask;
 import com.backendless.Backendless;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+    List<String> playerList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +44,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.bRetrieveAllPlayerData:
+
                 Backendless.initApp(this, BackendSettings.APP_ID, BackendSettings.SECRET_KEY, BackendSettings.VERSION);
-                RetrievePlayerData playerData = new RetrievePlayerData();
-                playerData.retrieveAllPlayerData();
+
+                new RetrievePlayerDataTask(getApplicationContext()).execute("");
 
                 break;
         }
